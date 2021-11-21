@@ -4,27 +4,124 @@
     <meta charset='utf-8'>
     <title>Probabilidad</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src='js/scripts.js'></script>
+    <link href="css/fontawesome-all.css" rel="stylesheet" type='text/css'>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" class="logo">
-        <div class="datos">
-            Bryant David Ortega Veloza - 20191020025
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="logo" width="200">
+            </a>
+            <div class="datos">Bryant David Ortega Veloza - 20191020025</div>
         </div>
-    </header>
-    <section class="contenedor">
-        <ul class="menu">
-            <li><a href="#">1. Probabilidad</a></li>
-            <li><a href="#">2. Teor&iacute;as de probabilidad</a></li>
-            <li><a href="#">3. Muestras aleatorias</a></li>
-            <li><a href="#">4. Distribuciones de probabilidad</a></li>
-        </ul>
-        <main>
+    </nav>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="menu col-sm-3 col-xl-2">
+                <ul>
+                    <li><a href="#probabilidad" class="activo">1. Probabilidad</a></li>
+                    <li><a href="#teoria">2. Teor&iacute;as de probabilidad</a></li>
+                    <li><a href="#muestras">3. Muestras aleatorias</a></li>
+                    <li><a href="#distribuciones">4. Distribuciones de probabilidad</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-xl-10">
+                <main>
+                    <div id="probabilidad">
+                        <div class="row titulo">
+                            <div class="offset-4 col-sm-4">
+                                <div class="item-mapa gris">1. Probabilidad</div>
+                            </div>
+                        </div>
 
-        </main>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿La Probabilidad es un sistema axiom&aacute;tico?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">a. Axiomas</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Cu&aacute;les son los principios de la Probabilidad?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-azul item-interno" data-bs-toggle="modal" data-bs-target="#popupAxiomas">
+                                                Ver Axiomas / Principios <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
+                                        </div>
+                                        
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Cu&aacute;les son los objetos de estudio de la Probabilidad?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿C&oacute;mo asignar el valor de probabilidad a un evento?</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Qu&eacute; reglas se establecen para el manejo de las probabilidades?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </main>
+            </div>
+        </div>
     </section>
-    
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="popupAxiomas" tabindex="-1" aria-labelledby="popupAxiomasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-azul">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popupAxiomasLabel">Axiomas / Principios</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><b>Espacio muestral:</b> Conjunto de todos los posibles resultados de un experimento, habitualmente se denota con la letra: <span class="amarillo">S</span></p>
+                    <p><b>Evento:</b> Subconjunto del espacio muestral, habitualmente se denota con letras Ej: <span class="amarillo">A, B, C, ...</span></p>
+                    <p>La <b>probabilidad</b> es una medida de la posible ocurrencia de un evento <span class="amarillo">A</span>, se denota como: P(<span class="amarillo">A</span>)<br>
+                    Los posibles valores de una probabilidad siempre se encontrar&aacute;n entre 0 y 1
+                    </p>
+                    <h3>Axiomas</h3>
+                    Sea <span class="amarillo">S</span> un espacio muestral y <span class="amarillo">A</span> un evento en <span class="amarillo">S</span>
+                    <ol>
+                        <li>P(<span class="amarillo">A</span>) &ge; 0</li>
+                        <li>P(<span class="amarillo">S</span>) &equals; 1</li>
+                        <li>Si <span class="amarillo">A<span class="sub">1</span>, A<span class="sub">2</span>, A<span class="sub">3</span>, ...</span> es una colección infinita de 
+                            eventos mutuamente excluyentes, entonces:<br>
+                            <img src="img/axioma3.png" width="300" class="formula"/>
+                        </li>
+                    </ol>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='js/scripts.js'></script>
 </body>
 </html>

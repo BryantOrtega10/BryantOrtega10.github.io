@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.datos {
+    color: #FFF;
+}
+
+.menu {
+    min-height: calc(100vh - 90px);
+    background: #212529;
+}
+
+.menu ul a.activo,
+.menu ul a:hover {
+    display: block;
+    background: #FFF;
+    color: #2a2a2a;
+}
+
+.menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: "Roboto";
+    font-weight: 400;
+    padding: 5px 0px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+}
+
+main {
+    height: 100%;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.item-mapa {
+    font-size: 1em;
+    padding: 7px 0px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 190px;
+}
+
+.item-mapa.gris {
+    background: #e0e0e0;
+    border: 1px solid #b5b5b5;
+}
+
+.item-texto {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.item-texto:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    left: 50%;
+    top: 0;
+    background: #000;
+}
+
+.item-texto:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    left: 50%;
+    bottom: 0;
+    background: #000;
+}
+
+.row.titulo {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.row.titulo:before {
+    content: "";
+    width: 75%;
+    background: #000;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+}
+
+.row.titulo:after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #000;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+span.icono {
+    padding-left: 10px;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    height: 100%;
+}
+
+span.icono:before {
+    content: "";
+    width: 1px;
+    height: calc(100% + 14px);
+    position: absolute;
+    background: #FFF;
+    left: 0;
+    top: -6px;
+}
+
+.item-interno {
+    position: relative;
+}
+.item-mapa.verde {
+    background: #0da03a;
+    color: #FFF;
+}
+
+.btn-azul {
+    background: #0063a9;
+    color: #FFF;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-azul:hover {
+    color: #FFF;
+    background: #0389e8;
+}
+.modal-content.modal-azul {
+    background: #02548e;
+    color: #fff;
+}
+.amarillo {
+    color: #effb3e;
+}
+span.sub {
+    font-size: 0.6em;
+}
