@@ -190,3 +190,13 @@ nav.navbar {
 p{
     text-align: justify;
 }
+
+.img-excel{
+    margin: 15px 0;
+}
+
+.nota{
+    display: block;
+    padding: 15px;
+    padding-bottom: 50px;
+}
