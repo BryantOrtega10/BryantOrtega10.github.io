@@ -23,13 +23,13 @@
                 <ul>
                     <li><a href="#probabilidad" class="activo">1. Probabilidad</a></li>
                     <li><a href="#teoria">2. Teor&iacute;as de probabilidad</a></li>
-                    <li><a href="#muestras">3. Muestras aleatorias</a></li>
-                    <li><a href="#distribuciones">4. Distribuciones de probabilidad</a></li>
+                    <li><a href="#excel">Ejercicio Excel</a></li>
+                    
                 </ul>
             </div>
-            <div class="col-sm-9 col-xl-10">
+            <div class="offset-sm-3 offset-xl-2 col-sm-9 col-xl-10">
                 <main>
-                    <div id="probabilidad">
+                    <div id="probabilidad" class="arbol_general">
                         <div class="row titulo">
                             <div class="offset-4 col-sm-4">
                                 <div class="item-mapa gris">1. Probabilidad</div>
@@ -54,12 +54,21 @@
                                                 Ver Axiomas / Principios <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
                                             </button>
                                         </div>
-                                        
-
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="offset-1 col-sm-10">
                                             <div class="item-texto">¿Cu&aacute;les son los objetos de estudio de la Probabilidad?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">b. Suceso y tipos de sucesos</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿D&oacute;nde encuentro ejemplos de este tema?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-amarillo item-interno" data-bs-toggle="modal" data-bs-target="#popupB">
+                                                Enlaces <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -70,10 +79,32 @@
                                         <div class="offset-1 col-sm-10">
                                             <div class="item-texto">¿C&oacute;mo asignar el valor de probabilidad a un evento?</div>
                                         </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">c. Probabilidad de un suceso</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿C&oacute;mo construir ejemplos de espacios muestrales?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-azul item-interno" data-bs-toggle="modal" data-bs-target="#popupC">
+                                                Probabilidad de un suceso y ejemplos de espacios muestrales<span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
+                                        </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="offset-1 col-sm-10">
                                             <div class="item-texto">¿Qu&eacute; reglas se establecen para el manejo de las probabilidades?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">d. Leyes de las probabilidades</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿D&oacute;nde encuentro un resumen de estas leyes?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-amarillo item-interno" data-bs-toggle="modal" data-bs-target="#popupD">
+                                                Enlaces <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -83,13 +114,100 @@
 
 
                     </div>
+                    <div id="teoria" class="arbol_general">
+                        <div class="row titulo">
+                            <div class="offset-4 col-sm-4">
+                                <div class="item-mapa gris">2. Teor&iacute;as de Probabilidad</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Qui&eacute;n fue Thomas Bayes y cu&aacute;l fue su aporte?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">a. Teor&iacute;a bayesiana</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿C&oacute;mo construir casos de Probabilidad Condicional?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-azul item-interno" data-bs-toggle="modal" data-bs-target="#popup2A">
+                                                Thomas Bayes, Teorema de Bayes y Probabilidad Condicional <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Qu&eacute; funciones se definen sobre los eventos?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">b. Variables aleatorias</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿D&oacute;nde encuentro m&aacute;s informaci&oacute;n de las
+                                                variables aleatorias?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-azul item-interno" data-bs-toggle="modal" data-bs-target="#popup2B">
+                                                Variables aleatorias <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Qu&eacute; es la Esperanza Matem&aacute;tica?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">c. Promedio o Media Aritmética</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿C&oacute;mo calcular un Valor Esperado?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-azul item-interno" data-bs-toggle="modal" data-bs-target="#popup2C">
+                                                Esperanza matemática<span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">¿Qué son la Dispersión y la Variabilidad de los resultados de un experimento?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-mapa verde">d. Desviación Estandar y Varianza</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <div class="item-texto">C&oacute;mo calcular la Varianza de una variable aleatoria?</div>
+                                        </div>
+                                        <div class="offset-1 col-sm-10">
+                                            <button class="btn btn-azul item-interno" data-bs-toggle="modal" data-bs-target="#popup2D">
+                                                Desviación Estandar y Varianza <span class="icono"><i class="fas fa-arrow-circle-right"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="excel" class="arbol_general">
+                    </div>
                 </main>
             </div>
         </div>
     </section>
 
 
-
+    
     <!-- Modal -->
     <div class="modal fade" id="popupAxiomas" tabindex="-1" aria-labelledby="popupAxiomasLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -99,7 +217,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p><b>Espacio muestral:</b> Conjunto de todos los posibles resultados de un experimento, habitualmente se denota con la letra: <span class="amarillo">S</span></p>
+                    <p><b>Espacio muestral:</b> Conjunto de todos los posibles resultados de un experimento aleatorio, habitualmente se denota con la letra: <span class="amarillo">S</span></p>
                     <p><b>Evento:</b> Subconjunto del espacio muestral, habitualmente se denota con letras Ej: <span class="amarillo">A, B, C, ...</span></p>
                     <p>La <b>probabilidad</b> es una medida de la posible ocurrencia de un evento <span class="amarillo">A</span>, se denota como: P(<span class="amarillo">A</span>)<br>
                     Los posibles valores de una probabilidad siempre se encontrar&aacute;n entre 0 y 1
@@ -114,13 +232,286 @@
                             <img src="img/axioma3.png" width="300" class="formula"/>
                         </li>
                     </ol>
+                    <b>Tomado de:</b>
+                    <a href="https://www.youtube.com/c/Estad%C3%ADstica%C3%BAtil" class="link-light" target="_blank">Youtube - Estad&iacute;stica &Uacute;til</a>
                 </div>
-                
-
             </div>
         </div>
     </div>
+    <div class="modal fade" id="popupB" tabindex="-1" aria-labelledby="popupBLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-amarillo">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popupBLabel">Suceso y tipos de sucesos</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="https://ekuatio.com/apuntes-de-matematicas/estadistica-probabilidad/tipos-de-sucesos/" class="link-dark" target="_blank">Ekuatio - Tipos de sucesos</a></li>
+                        <li><a href="http://revista.miprepanogales.mx/2021/06/07/sucesos-tipos-de-sucesos/" class="link-dark" target="_blank">Kendor Parada - Sucesos/ Tipos de sucesos</a></li>
+                        <li><a href="https://www.superprof.es/diccionario/matematicas/probabilidades/sucesos-probabilidad.html" class="link-dark" target="_blank">Superprof.es - Sucesos de Probabilidad</a></li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popupC" tabindex="-1" aria-labelledby="popupCLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-azul">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popupCLabel">Probabilidad de un suceso y ejemplos de espacios muestrales</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><b>Espacio muestral:</b> Conjunto de todos los posibles resultados de un experimento aleatorio, habitualmente se denota con la letra: <span class="amarillo">S</span> y los sucesos elementales entre corchetes.</p>
+                    <p><b>Suceso:</b> Subconjunto del espacio muestral, habitualmente se denota con letras.<br></p>
+                    <p>La <b>Probabilidad</b> (<span class="amarillo">P</span>) indica la posibilidad de que produzca en el futuro un determinado suceso aleatorio.<br>
+                    La Probabilidad viene expresada por un número comprendido entre 0 y 1 donde:<br>
+                    <ul>
+                        <li>0: indica suceso imposible, es decir 0% de probabilidad de que suceda</li>
+                        <li>1: indica suceso seguro, es decir 100% de probabilidad de que suceda</li>
+                    </ul>
+                    Entre 0 y 1, la probabilidad puede tomar infinitos valores, por ejemplo 0,4 indica que un determinado suceso tiene un 40% de posibilidades ocurrir.<br>
+                    </p>
+                    <p>
+                    <h5>Probabilidad de un suceso</h5> La probabilidad de un suceso X se puede calcular mediante la siguiente fórmula:<br><br>
+                    <div class="text-center">
+                        <img src="img/probabilidad1.png" width="350" />
+                    </div>    
+                    </p>
 
+
+                    <p>
+                    <h5>Ejemplos de espacios muestrales</h5>
+                    <ul>
+                        <li>Espacio muestral del tiro de un dado: S = {1, 2, 3, 4, 5, 6}</li>
+                        <li>Espacio muestral del tiro de 1 moneda: S = {cara, cruz}</li>
+                        <li>Espacio muestral del tiro de 2 monedas: S = {cara-cara, cara-cruz, cruz-cara, cruz-cruz}</li>                        
+                    </ul>
+                    </p>
+                    <b>Tomado de:</b>
+                    <ul>
+                        <li>Matematicas10.net (2018). "Ejemplos de Probabilidad". <a href="https://www.matematicas10.net/2015/12/ejemplos-de-probabilidad.html" class="link-light">https://www.matematicas10.net/2015/12/ejemplos-de-probabilidad.html</a></li>
+                        <li>Matematicas10.net (2018). "Ejemplos de Espacio Muestral". 
+                            <a href="https://www.matematicas10.net/2017/02/ejemplos-de-espacio-muestral.html"  class="link-light">https://www.matematicas10.net/2017/02/ejemplos-de-espacio-muestral.html</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popupD" tabindex="-1" aria-labelledby="popupDLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-amarillo">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popupDLabel">Leyes de la probabilidad</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="http://soy-staff.blogspot.com/2015/10/leyes-de-la-probabilidad.html" class="link-dark" target="_blank">SoyStaff - Leyes de la probabilidad</a></li>
+                        <li><a href="https://blogdefisicadevalentina.wordpress.com/estadistica/cuarto-periodo/leyes-de-la-probabilidad/" class="link-dark" target="_blank">blogdefisicadevalentina - Leyes de la probabilidad</a></li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup2A" tabindex="-1" aria-labelledby="popup2ALabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-azul">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popup2ALabel">Thomas Bayes, Teorema de Bayes y Probabilidad Condicional</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Thomas Bayes</h4>
+                    <p>Fue un teólogo y matemático inglés, considerado la primera persona en utilizar la probabilidad inductiva. Además, desarrolló un teorema que lleva su nombre: el <b>Teorema de Bayes</b>. Fue el primero en establecer una base matemática para la inferencia de probabilidad: un método para calcular la frecuencia con la que un evento ha ocurrido anteriormente y la probabilidad de que ocurra en pruebas futuras.</p>
+                    <b>Tomado de</b><br>
+                    Lifeder - <a href="https://www.lifeder.com/thomas-bayes/" target="_blank" class="link-light">https://www.lifeder.com/thomas-bayes/</a>
+                    <br><br>
+                    <h4>Teorema de Bayes</h4>
+                    <p>Es un sistema de cálculo de probabilidades pero hecho de forma inversa a cómo se calculan habitualmente.</p>
+                    <p>Tiene en cuenta la información que conocemos que se ha producido en determinado entorno con determinados factores para saber cuáles de esos factores han producido esas consecuencias. La fórmula del Teorema de Bayes es:</p>
+                    <div class="text-center">
+                        <img src="img/teorema_bayes.png" height="80" />
+                    </div>
+                    <p>
+                        <ul>
+                            <li>Donde B<span class="sub">1</span>, B<span class="sub">2</span>, ..., B<span class="sub">k</span> son eventos que constituyen una partición del espacio muestral <b>S</b> con P(B<span class="sub">i</span>) &gt; 0 para i = 1, 2, ..., k. </li>
+                            <li>Donde A es un evento que se puede observar de manera simultanea con B<span class="sub">1</span>, B<span class="sub">2</span>, ..., B<span class="sub">k</span>. </li>
+                            <li>Donde P(B<span class="sub">r</span> &cap; A) es la probabilidad que ocurra el evento B<span class="sub">r</span> y el evento A</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Tomado de:</b>
+                        <ul>
+                            <li>
+                                <a href="https://www.sdelsol.com/glosario/teorema-de-bayes/" class="link-light" target="_blank">Software DELSOL | Teorema de Bayes</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=yWUTaQOwjxU&ab_channel=Estad%C3%ADstica%C3%BAtil" class="link-light" target="_blank">Youtube - Estad&iacute;stica &Uacute;til | Teorema de Bayes</a>
+                            </li>
+                        </ul>
+                    </p>
+                
+                    <h4>Probabilidad condicional</h4>
+                    <p>Probabilidad de que suceda <b class="amarillo">A</b> dado que ya sucedio  <b class="amarillo">B</b>, su notaci&oacute;n es:</p>
+                    <div class="text-center">
+                        <img src="img/probabilidad_condicionada.png" height="40" />
+                    </div>
+                    <h4>Ejemplo</h4>
+                    <p>Hay dos métodos, A y B, para enseñar cierta destreza industrial. El porcentaje de fracaso del método A es de 20% y el de B es 10%; sin embargo, como el método B es mas costoso se aplica solo el 30% del tiempo (el otro 70 % se emplea A). Una trabajadora recibió la capacitación con uno de los métodos peno aprendió la destreza. ¿Cuál es la probabilidad de que se le haya enseñado con el método A?</p>
+                    <div class="text-center">
+                        <img src="img/ejemplo2A.png" width="400" />
+                    </div>
+                    <b>Tomado de:</b>
+                    <a href="https://www.youtube.com/watch?v=yWUTaQOwjxU&ab_channel=Estad%C3%ADstica%C3%BAtil" class="link-light" target="_blank">Youtube - Estad&iacute;stica &Uacute;til | Teorema de Bayes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup2B" tabindex="-1" aria-labelledby="popup2BLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-azul">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popup2BLabel">Variables aleatorias</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Una variable aleatoria es la función matemática de un experimento aleatorio. Es una ecuación que describe o intenta describir los resultados (con un número) de un evento cuyos resultados se deben al azar.</p>
+                    <h5>Tipos de variable aleatoria</h5>
+                    <p>Su clasificación, depende del tipo de número que arroja la función matemática.
+                    <ul>
+                        <li>Variable aleatoria discreta: Una variable aleatoria es discreta si los números a los que da lugar son números enteros. La forma de calcular las probabilidades de una variable aleatoria discreta es a través de la función de probabilidad.</li>
+                        <li>Variable aleatoria continua: Una variable aleatoria es continua en caso de que los números a los que de lugar no sean números enteros. La probabilidad de que se de un suceso determinado correspondiente a una variable aleatoria continua, viene establecido por la función de densidad.</li>
+                    </ul>    
+                    </p>
+                    <h5>Ejemplo</h5>
+                    <p>Que salga un número mayor que 2 al lanzar el dado.<br>
+                        <b class="amarillo">X</b>: Que salga mayor que 2 al lanzar el dado<br>
+                        <b>Distribución de probabilidad</b>:  1/3 no sale mayor que 2 y 2/3 si sale mayor que 2.
+                    </p>
+                    <p>
+                        Es decir, la probabilidad se distribuye tal que la probabilidad de que salga un numero menor o igual que 2 es de 1/3. Mientras, la probabilidad de que salga mayor que 2 es 2/3
+                    </p>
+                    <p>
+                        Por tanto, nuestra variable aleatoria dependerá del resultado concreto del valor del dado. El tipo de variable al que estamos haciendo referencia es discreta.Porque cuando tiramos un dado solo podemos obtener 6 posibles resultados. Todos ellos, son números enteros. Concretamente, entre 1 y 6.
+                    </p>
+
+                    
+                    <b>Ver mas en:</b>
+                    <ul>
+                        <li><a href="https://economipedia.com/definiciones/variable-aleatoria.html" class="link-light" target="_blank">Economipedia - Variable aleatoria</a></li>
+                        <li><a href="http://www4.ujaen.es/~dmontoro/Metodos/Temas/Tema4.pdf" class="link-light" target="_blank">Universidad de Jaén - Variable aleatoria</a></li>                       
+                    </ul>         
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup2C" tabindex="-1" aria-labelledby="popup2CLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-azul">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popup2CLabel">Esperanza matemática o valor Esperado</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La <b>esperanza matemática</b>, también llamada <b>valor esperado</b>, es igual al sumatorio de las probabilidades de que exista un suceso aleatorio, multiplicado por el valor del suceso aleatorio.</p>
+                    <p>Mientras que en matemáticas, se denomina media matemática al valor promedio de un suceso que ha ocurrido. En distribuciones discretas con la misma probabilidad en cada suceso, la media aritmética es igual que la esperanza matemática.</p>
+                    <p>La esperanza matemática se calcula utilizando la probabilidad de cada suceso. </p>
+                    <div class="text-center">
+                        <img src="img/esperanza.png" height="80" />
+                    </div>
+                    <p>
+                        D&oacute;nde:
+                        <ul>
+                            <li>X = valor del suceso.</li>
+                            <li>P = Probabilidad de que ocurra.</li>
+                            <li>i = Periodo en el que se da dicho suceso.</li>
+                            <li>N = Número total de periodos u observaciones.</li>
+                        </ul>
+                    </p>
+                    <b>Tomado de:</b>
+                    <ul>
+                        <li><a href="https://economipedia.com/definiciones/esperanza-matematica.html" class="link-light" target="_blank">Economipedia - Esperanza matemática</a></li>
+                    </ul>         
+
+                    <h5>Ejemplos</h5>
+                    <ul>
+                        <li><b>Ejemplo 1:</b> supongomos que en el juego de los dados si sale 1, 2 o 3 pierdo un dólar, si sale un 4 o un 5 no gano nada y si sale 6 gano 2 dólares. ¿Cuánto puedo esperar ganar si juego 100 veces seguidas?
+                            <ul>
+                                <li>La probabilidad de cada suceso es igual: p<span class="sub">1</span>=1/6, p<span class="sub">2</span>=1/6, p<span class="sub">3</span>=1/6, p<span class="sub">4</span>=1/6, p<span class="sub">5</span>=1/6, p<span class="sub">6</span>=1/6.</li>
+                                <li>Los valores de los sucesos son: x<span class="sub">1</span> = x<span class="sub">2</span> = x<span class="sub">3</span> = -1, x<span class="sub">4</span> = x<span class="sub">5</span> = 0, x<span class="sub">6</span> = 2</li>
+                                <li>E(x) = -1· 1/6 + -1 ·1/6 + -1 · 1/6 + 0 · 1/6 + 0 · 1/6 + 2 · 1/6 = -1/6 -1/6 -1/6 +2/6 = -1/6</li>
+                                <li>100 · (-1/6) = -100/6 = -16,7 dólares → si se tira el dado 100 veces puedo esperar perder unos 16,7 dólares de media.</li>
+                            </ul>
+                        </li>
+                        <li><b>Ejemplo 2:</b> sea un juego de mesa en el que al tirar un dado avanzo tantas casillas como salga en el dado. Se gana al llegar a la casilla 100. ¿Cuántas jugadas se puede esperar necesitar para llegar a la meta?
+                            <ul>
+                                <li>La probabilidad de cada suceso es igual: p<span class="sub">1</span>=1/6, p<span class="sub">2</span>=1/6, p<span class="sub">3</span>=1/6, p<span class="sub">4</span>=1/6, p<span class="sub">5</span>=1/6, p<span class="sub">6</span>=1/6. </li>
+                                <li>Los valores de los sucesos son: x<span class="sub">1</span> = 1, x<span class="sub">2</span> = 2,  x<span class="sub">3</span> = 3, x<span class="sub">4</span> = 4, x<span class="sub">5</span> = 5, x<span class="sub">6</span> = 6</li>
+                                <li>E(x) = 1· 1/6 + 2 ·1/6 + 3 · 1/6 + 4 · 1/6 + 5 · 1/6 + 6 · 1/6 = 1/6 + 2/6 +3/6 +4/6 + 5/6 + 6/6 = = 21/6 = 3,5 → de media se avanza 3,5 casillas cada vez que se tira el dado</li>
+                                <li>100 casillas / 3,5 casillas cada tirada = 28,6 tiradas de media para llegar a la meta</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <b>Tomado de:</b>
+                    <ul>
+                        <li><a href="https://www.matematicas10.net/2017/02/ejemplos-de-esperanza-matematica.html" class="link-light" target="_blank">Matematicas10 - Ejemplos esperanza matemática</a></li>
+                    </ul>   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup2D" tabindex="-1" aria-labelledby="popup2DLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-azul">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="popupDCLabel">Varianza y Desviación Estandar</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Varianza</h5>
+                    <p>La <b>Varianza</b> es una medida estadística de la dispersión (variabilidad) que se define como la media aritmética del cuadrado de las desviaciones de las muestras respecto a la media.</p>
+                    <p>La Varianza se representa mediante el símbolo griego sigma al cuadrado (σ2)  y se formula de la siguiente manera:</p>
+                    <div class="text-center">
+                        <img src="img/varianza.png" height="80" />
+                    </div>
+                    <p>Donde:
+                        <ul>
+                            <li>X: variable sobre la que se pretenden calcular la varianza</li>
+                            <li>x<span class="sub">i</span>: observación número i de la variable X. i puede tomará valores entre 1 y n.</li>
+                            <li>n: número de observaciones.</li>
+                            <li>x̄: Es la media de la variable X.</li>
+                        </ul>
+                    </p>
+                    <h5>Desviación Estandar</h5>
+                    <p>Es la raíz cuadrada de la varianza, es decir &sigma;</p>
+                    <b>Tomado de:</b>
+                    <ul>
+                        <li><a href="https://www.matematicas10.net/2015/12/ejemplos-de-varianza.html" class="link-light" target="_blank">Matematicas10 - Ejemplos de varianza</a></li>
+                    </ul>      
+                    <b>Ejemplos en:</b>
+                    <ul>
+                        <li><a href="https://matemovil.com/media-o-valor-esperado-varianza-y-desviacion-estandar-de-una-variable-aleatoria-continua/" class="link-light" target="_blank">Matemovil - Ejemplos de varianza en variable aleatoria continua</a></li>
+                        <li><a href="https://matemovil.com/media-varianza-y-desviacion-estandar-de-una-variable-aleatoria-discreta/" class="link-light" target="_blank">Matemovil - Ejemplos de varianza en variable aleatoria discreta</a></li>
+                    </ul>      
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src='js/scripts.js'></script>
 </body>

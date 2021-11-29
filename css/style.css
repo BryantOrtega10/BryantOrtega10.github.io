@@ -7,6 +7,8 @@
 .menu {
     min-height: calc(100vh - 90px);
     background: #212529;
+    position: fixed;
+    margin-top: 88px;
 }
 
 .menu ul a.activo,
@@ -37,8 +39,7 @@
 }
 
 main {
-    height: 100%;
-    padding: 20px 30px;
+    min-height: calc(100vh - 90px);
     text-align: center;
 }
 
@@ -49,7 +50,7 @@ main {
     margin: auto;
     display: block;
     width: 100%;
-    max-width: 190px;
+    max-width: 260px;
 }
 
 .item-mapa.gris {
@@ -129,8 +130,8 @@ span.icono:before {
     position: relative;
 }
 .item-mapa.verde {
-    background: #0da03a;
-    color: #FFF;
+    border: 1px solid #0da03a;
+    font-weight: bold;
 }
 
 .btn-azul {
@@ -155,5 +156,37 @@ span.icono:before {
     color: #effb3e;
 }
 span.sub {
-    font-size: 0.6em;
+    font-size: 0.7em;
+    padding: 0 2px;
+    top: 5px;
+    display: inline-block;
+    position: relative;
+}
+.btn-amarillo {
+    background: #ffe001;
+}
+
+.btn-amarillo span.icono:before {
+    background: #000;
+}
+
+.modal-amarillo {
+    background: #ffed68;
+}
+
+.modal-amarillo .modal-header {
+    border-color: #000;
+}
+.arbol_general{
+    height: 100vh;
+    padding-top: 130px;
+}
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+p{
+    text-align: justify;
 }
