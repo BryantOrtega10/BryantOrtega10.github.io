@@ -71,7 +71,7 @@ document.querySelector("#guardar").addEventListener("click", (e) => {
 
 
             document.querySelector("#cargando").classList.add("active")
-            fetch("http://ip-api.com/batch", {
+            fetch("https://ip-api.com/batch", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(arrIps)
