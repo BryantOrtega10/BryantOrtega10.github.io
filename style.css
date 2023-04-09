@@ -1,0 +1,116 @@
+header {
+    background: #000;
+    color: #FFF;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 11px #CCC;
+}
+
+header p {
+    margin: 0;
+}
+.paso span.numero {
+    background: #ebebeb;
+    color: #888;
+    margin-right: 15px;
+    border: 5px solid #fff;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+a.paso {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s;
+}
+.paso span.texto-pill {
+    color: #888;
+    transition: all 0.3s;
+    max-width: calc(100% - 70px);
+}
+
+.paso:not(.disable):hover span.numero, .paso.active span.numero {
+    background: #198754;
+    color: #FFF;
+}
+
+.paso:not(.disable):hover span.texto-pill, .paso.active span.texto-pill {
+    color: #198754;
+}
+
+.n-menu-lat:before {
+    content: "";
+    position: absolute;
+    background: #CCC;
+    height: calc(100% - 40px);
+    width: 5px;
+    display: block;
+    z-index: 0;
+    left: 22px;
+    top: 10px;
+}
+
+
+.n-menu-lat {
+    position: relative;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+main.container {
+    background: #FFF;
+    padding-top: 15px;
+}
+.full-height{
+    min-height: calc(100vh - 180px);
+}
+div#cargando {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 9999;
+    background: #00000085;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div#cargando.active {
+    display: flex;
+}
+
+.spin {
+    border-radius: 50%;
+    border: 15px solid #00ffdc;
+    width: 100px;
+    height: 100px;
+    border-left-color: transparent;
+    transform: rotate(0deg);
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotar {
+  0% {transform: rotate(0deg);border-color: #c3ff00;border-left-color: transparent;}
+  50% {transform: rotate(360deg);border-color: #00ffdc;border-left-color: transparent;}
+  100% {transform: rotate(720deg);border-color: #c3ff00;border-left-color: transparent;}
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+}
